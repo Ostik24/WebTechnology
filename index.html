@@ -13,7 +13,7 @@
                 <a class="header-link" href="#">Menu</a>
                 <a class="header-link" href="#">Contact</a>
                 <a class="header-link" href="#">About us</a>
-                <button class="sign-btn"><a href="#">Sign</a></button>
+                <button class="sign-btn">Sign</button>
             </nav>
         </header>
 
@@ -21,7 +21,7 @@
             <section class="banner">
                 <div>
                     <div class="banner-subheader">
-                        <p>#1 Best Healthy Pizza</p>
+                        <span>#1 Best Healthy Pizza</span>
                     </div>
                     <h1 class="banner-header">
                         <span class="orange-part">Skip</span> The Diet, Just Eat Healthy With Veterano Pizza
@@ -36,15 +36,15 @@
                     <div class="features">
                         <div class="feature">
                             <h3>5.000+</h3>
-                            <p>Customer</p>
+                            <span>Customer</span>
                         </div>
                         <div class="feature">
                             <h3>8.000+</h3>
-                            <p>Delivery</p>
+                            <span>Delivery</span>
                         </div>
                         <div class="feature">
                             <h3>1.000+</h3>
-                            <p>Ratings</p>
+                            <span>Ratings</span>
                         </div>
                     </div>
                 </div>
@@ -81,12 +81,12 @@
                         src="images/star.svg"
                         alt="Rate Star"
                     />
-                    <p class="rating-text">4.9 (1.989 Reviews)</p>
+                    <span class="rating-text">4.9 (1.989 Reviews)</span>
                 </div>
 
                 <div class="calories">
                     <h5 class="calories-header">Daily Calories</h5>
-                    <p class="calories-text">123 Cal</p>
+                    <span class="calories-text">123 Cal</span>
                     <div class="calories-progress">
                         <div class="calories-progress-bar"></div>
                         <div class="calories-progress-bar"></div>
@@ -170,9 +170,14 @@
             <section class="comments">
                 <h2 class="section-header">What Are People Saying <span class="orange-part">About Us</span></h2>
                 <p class="comments-description">We are very happy if you are satisfied with our service and products, let's read pure reviews from customers who bought our products.</p>
-                <p class="comments-counter">02/05</p>
-                <button class="comments-btn"><a><img src="./images/arrow_white_left.svg"></a></button>
-                <button class="comments-btn"><a><img src="./images/arrow_white_right.svg"></a></button>
+                <div class="comments-counter">
+                    <span class="comments-counter-capital">02</span>
+                    <span class="comments-counter-lower">/05</span>
+                </div>
+                <div class="comments-btns">
+                    <button class="comments-btn"><img src="./images/arrow_white_left.svg"></button>
+                    <button class="comments-btn"><img src="./images/arrow_white_right.svg"></button>
+                </div>
                 <aside class="comments-cards">
                     <article class="comment">
                         <img
@@ -181,7 +186,7 @@
                             alt="Customer"
                         />
                         <h4 class="comment-name">Hryniv Rostyslav</h4>
-                        <p class="comment-year">60 Years</p>
+                        <span class="comment-year">60 Years</span>
                         <p class="comment-text">This pizza is like hypothesis testing! You can immerse yourself into it! Love this pizza even more than Normal distribution :)
 
                         Oles thanks for the job as a dekan!</p>
@@ -193,7 +198,7 @@
                             alt="Customer"
                         />
                         <h4 class="comment-name">Tetiana Zakharchenko</h4>
-                        <p class="comment-year">35 Years</p>
+                        <span class="comment-year">35 Years</span>
                         <p class="comment-text">The pizza is tasty!!! Even OP doesn’t look like this pizza in Oles factory pizza, it’s unreal, it sounds so brilliant and tastes in the same way. Only recommendation!!!!!</p>
                     </article>
                     <article class="comment">
@@ -203,7 +208,7 @@
                             alt="Customer"
                         />
                         <h4 class="comment-name">Nadia Liaskovska</h4>
-                        <p class="comment-year">46 Years</p>
+                        <span class="comment-year">46 Years</span>
                         <p class="comment-text">This pizza sounds as a reduced row echelon form, sounds strange, but when you try it, it is as Natalia once said  PUT YOURSELF ON MYSELF AND FEEL THAT taste!!!</p>
                     </article>
                 </aside>
@@ -219,8 +224,8 @@
                             src="./images/menu1.png"
                             alt="Pizza"
                         />
-                        <h4 class="menu-name">Pizza Proxy Factory</h4>
-                        <p class="menu-price">$2.99</p>
+                        <span class="menu-name">Pizza Proxy Factory</span>
+                        <h4 class="menu-price">$2.99</h4>
                     </article>
                     <article class="menu-item">
                         <img
@@ -228,8 +233,8 @@
                             src="./images/menu2.png"
                             alt="Pizza"
                         />
-                        <h4 class="menu-name">Pizza Normal Distribution</h4>
-                        <p class="menu-price">$3.99</p>
+                        <span class="menu-name">Pizza Normal Distribution</span>
+                        <h4 class="menu-price">$3.99</h4>
                     </article>
                     <article class="menu-item">
                         <img
@@ -237,8 +242,8 @@
                             src="./images/menu3.png"
                             alt="Pizza"
                         />
-                        <h4 class="menu-name">Pizza Tipa Korotshe</h4>
-                        <p class="menu-price">$3.99</p>
+                        <span class="menu-name">Pizza Tipa Korotshe</span>
+                        <h4 class="menu-price">$3.99</h4>
                     </article>
             </section>
 
@@ -257,7 +262,7 @@
                         type="email"
                         placeholder="Enter your email address"
                     />
-                    <button class="subscribe-btn" type="submit"><a href="#">Subscribe</a></button>
+                    <button class="subscribe-btn" type="submit">Subscribe</button>
                 </form>
             </section>
 
@@ -265,7 +270,7 @@
                 <div class="footer-logo">
                     <h4><span class="orange-part">Oles</span> Pizza</h4>
                     <p class="footer-text">Oles Pizza is the pioneer of healthy tasty pizza with high nutrition.</p>
-                    <p>©Copyright Oles UCU Pizza</p>
+                    <span class="footer-undertext">©Copyright Oles UCU Pizza</span>
                 </div>
 
                 <nav class="footer-nav">
@@ -278,32 +283,38 @@
 
                 <div class="footer-touch">
                     <h4>Get in touch</h4>
-                    <a class="footer-touch-link" href="#">
-                        <img
-                            class="footer-touch-img"
-                            src="./images/location.svg"
-                            alt="Location"
-                        />
-                    </a>
-                    <p class="footer-touch-text">Kozelnytska, 2a</p>
+                    <div class="footer-touch-line">
+                        <a class="footer-touch-link" href="#">
+                            <img
+                                class="footer-touch-img"
+                                src="./images/location.svg"
+                                alt="Location"
+                            />
+                        </a>
+                        <span class="footer-touch-text">Kozelnytska, 2a</span>
+                    </div>
 
-                    <a class="footer-touch-link" href="#">
-                        <img
-                            class="footer-touch-img"
-                            src="./images/email.svg"
-                            alt="Email"
-                        />
-                    </a>
-                    <p class="footer-touch-text">dobosevych@ucu.edu.ua</p>
+                    <div class="footer-touch-line">
+                        <a class="footer-touch-link" href="#">
+                            <img
+                                class="footer-touch-img"
+                                src="./images/email.svg"
+                                alt="Email"
+                            />
+                        </a>
+                        <span class="footer-touch-text">dobosevych@ucu.edu.ua</span>
+                    </div>
 
-                    <a class="footer-touch-link" href="#">
-                        <img
-                            class="footer-touch-img"
-                            src="./images/phone.svg"
-                            alt="Phone"
-                        />
-                    </a>
-                    <p class="footer-touch-text">+380 (50) 819 78 55</p>
+                    <div class="footer-touch-line">
+                        <a class="footer-touch-link" href="#">
+                            <img
+                                class="footer-touch-img"
+                                src="./images/phone.svg"
+                                alt="Phone"
+                            />
+                        </a>
+                        <span class="footer-touch-text">+380 (50) 819 78 55</span>
+                    </div>
                 </div>
 
                 <div class="footer-social">
@@ -328,7 +339,7 @@
                             alt="Instagram"
                         />
                     </a>
-                    <p class="footer-text">Follow our social media.</p>
+                    <span class="footer-text">Follow our social media.</span>
                 </div>
             </footer>
         </main>
