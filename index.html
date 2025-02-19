@@ -3,49 +3,52 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>Oles Pizza</title>
     </head>
     <body>
         <header class="header">
-            <h1>Oles <span class="orange-part">Pizza</span></h1>
+            <h1 class="logo">Oles <span class="orange-part">Pizza</span></h1>
             <nav class="header-nav">
                 <a class="header-link" href="#">Home</a>
                 <a class="header-link" href="#">Menu</a>
                 <a class="header-link" href="#">Contact</a>
                 <a class="header-link" href="#">About us</a>
-                <button class="sign-btn">Sign</button>
             </nav>
+            <button class="sign-btn">Sign</button>
         </header>
 
         <main class="main">
             <section class="banner">
-                <div>
-                    <div class="banner-subheader">
-                        <span>#1 Best Healthy Pizza</span>
+                <div class="banner-subheader">
+                    <span>#1 Best Healthy Pizza</span>
+                </div>
+                <h1 class="banner-header">
+                    <span class="orange-part">Skip</span> The Diet, <br> Just Eat Healthy <br> With Veterano Pizza
+                </h1>
+                <p class="banner-text">
+                    Imagine you don't need a diet because we provide<br>
+                    healthy and delicious food for you!
+                </p>
+                <button class="banner-more-btn" href="#">Order Pizza</button>
+                <div class="features">
+                    <div class="feature">
+                        <h3>5.000+</h3>
+                        <span>Customer</span>
                     </div>
-                    <h1 class="banner-header">
-                        <span class="orange-part">Skip</span> The Diet, Just Eat Healthy With Veterano Pizza
-                    </h1>
-                    <p class="banner-text">
-                        Imagine you don't need a diet because we provide healthy
-                        and delicious food for you!
-                    </p>
-                    <button class="banner-more-btn">
-                        <a href="#">Order Pizza</a>
-                    </button>
-                    <div class="features">
-                        <div class="feature">
-                            <h3>5.000+</h3>
-                            <span>Customer</span>
-                        </div>
-                        <div class="feature">
-                            <h3>8.000+</h3>
-                            <span>Delivery</span>
-                        </div>
-                        <div class="feature">
-                            <h3>1.000+</h3>
-                            <span>Ratings</span>
-                        </div>
+                    <div class="feature">
+                        <h3>8.000+</h3>
+                        <span>Delivery</span>
+                    </div>
+                    <div class="feature">
+                        <h3>1.000+</h3>
+                        <span>Ratings</span>
                     </div>
                 </div>
             </section>
@@ -57,113 +60,114 @@
                     alt="Oles Pizza"
                 />
 
-                <img
-                    class="main-image-background"
-                    src="./images/lines_main.svg"
-                    alt="Background"
-                />
-
                 <div class="rating">
-                    <h4 class="rating-header">Our Happy Customer</h4>
                     <img
                         class="rating-emoji"
                         src="images/emoji_circle.png"
                         alt="Laughed Emoji"
                     />
-                    <img
-                        class="rating-star"
-                        src="images/star.svg"
-                        alt="Rate Star"
-                    />
-                    <span class="rating-text">4.9 (1.989 Reviews)</span>
+                    <div class="rating-aside-text">
+                        <h4 class="rating-header">Our Happy Customer</h4>
+                        <div class="rating-aside">
+                            <img
+                                src="images/star.svg"
+                                alt="Rate Star"
+                            />
+                            <span class="rating-text"><span class="rating-text-bold">4.9</span> (1.989 Reviews)</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="calories">
                     <h5 class="calories-header">Daily Calories</h5>
-                    <span class="calories-text">123 Cal</span>
+                    <span class="calories-text"><span class="calories-text-bold">123</span> Cal</span>
                     <div class="calories-progress">
-                        <div class="calories-progress-bar"></div>
-                        <div class="calories-progress-bar"></div>
-                        <div class="calories-progress-bar"></div>
-                        <div class="calories-progress-bar"></div>
-                        <div class="calories-progress-bar"></div>
-                        <div class="calories-progress-bar"></div>
-                        <div class="calories-progress-bar"></div>
-                        <div class="calories-progress-bar"></div>
+                        <div class="calories-progress-bar"><div id="calor-1" class="calories-progress-bar-in"></div></div>
+                        <div class="calories-progress-bar"><div id="calor-2" class="calories-progress-bar-in"></div></div>
+                        <div class="calories-progress-bar"><div id="calor-3" class="calories-progress-bar-in"></div></div>
+                        <div class="calories-progress-bar"><div id="calor-4" class="calories-progress-bar-in"></div></div>
+                        <div class="calories-progress-bar"><div id="calor-5" class="calories-progress-bar-in"></div></div>
+                        <div class="calories-progress-bar"><div id="calor-6" class="calories-progress-bar-in"></div></div>
+                        <div class="calories-progress-bar"><div id="calor-7" class="calories-progress-bar-in"></div></div>
+                        <div class="calories-progress-bar"><div id="calor-8" class="calories-progress-bar-in"></div></div>
                     </div>
                 </div>
             </aside>
+        </main>
 
-            <section class="benefits">
-                <h2 class="section-header">WHY CHOOSE US FOR <span class="orange-part">YOUR HEALTHY PIZZA</span></h2>
-                <p class="benefits-description">We continue to consistently choose and maintain the quality of the ingredients served, so that it remains fresh and nutritious when you eat it.</p>
-                <div class="benefits-container">
-                    <article class="benefit">
+        <section class="benefits">
+            <div class="benefits-subheader">
+                <h2 class="benefits-header">WHY CHOOSE US<br>FOR <span class="orange-part">YOUR HEALTHY PIZZA</span></h2>
+                <p class="benefits-description">We continue to consistently choose and<br>maintain the quality of the ingredients served,<br>so that it remains fresh and nutritious when<br>you eat it.</p>
+            </div>
+            <div class="benefits-cards">
+                <article class="benefit">
+                    <img
+                        class="benefit-img"
+                        src="./images/icon_city.svg"
+                        alt="Benefit"
+                    />
+                    <h4 class="benefit-name">Own ingredients orchard</h4>
+                    <p class="benefit-description">
+                        Langsung dari Kebun Sendiri yang<br>
+                        tersebar di setiap provinsi yang<br>
+                        memiliki cabang toko Jez Salad.
+                    </p>
+                    <div class="benefit-learn">
+                        <a class="benefit-link" href="#">Learn More</a>
                         <img
-                            class="benefit-img"
-                            src="./images/icon_city.svg"
-                            alt="Benefit"
-                        />
-                        <h4 class="benefit-name">Own ingredients orchard</h4>
-                        <p class="benefit-description">
-                            Langsung dari Kebun Sendiri yang
-                            tersebar di setiap provinsi yang
-                            memiliki cabang toko Jez Salad.
-                        </p>
-                        <div class="benefit-learn">
-                            <a class="benefit-link" href="#">Learn More</a>
-                            <img
-                                class="benefit-arrow"
-                                src="./images/arrow.svg"
-                                alt="Arrow"
-                        </div>
-                    </article>
-                    <article class="benefit">
+                            class="benefit-arrow"
+                            src="./images/arrow.svg"
+                            alt="Arrow"/>
+                    </div>
+                </article>
+                <article class="benefit">
+                    <img
+                        class="benefit-img"
+                        src="./images/icon_top1.svg"
+                        alt="Benefit"
+                    />
+                    <h4 class="benefit-name">#1 Healthy Pizza</h4>
+                    <p class="benefit-description">
+                        The pioneer of healthy Pizza that<br>
+                        are delicious & suitable for all people<br>
+                        with the best quality assurance.
+                    </p>
+                    <div class="benefit-learn">
+                        <a class="benefit-link" href="#">Learn More</a>
                         <img
-                            class="benefit-img"
-                            src="./images/icon_top1.svg"
-                            alt="Benefit"
-                        />
-                        <h4 class="benefit-name">#1 Healthy Pizza</h4>
-                        <p class="benefit-description">
-                            The pioneer of healthy Pizza that
-                            are delicious & suitable for all people
-                            with the best quality assurance.
-                        </p>
-                        <div class="benefit-learn">
-                            <a class="benefit-link" href="#">Learn More</a>
-                            <img
-                                class="benefit-arrow"
-                                src="./images/arrow.svg"
-                                alt="Arrow"
-                        </div>
-                    </article>
-                    <article class="benefit">
+                            class="benefit-arrow"
+                            src="./images/arrow.svg"
+                            alt="Arrow"/>
+                    </div>
+                </article>
+                <article class="benefit">
+                    <img
+                        class="benefit-img"
+                        src="./images/icon_cup.svg"
+                        alt="Benefit"
+                    />
+                    <h4 class="benefit-name">100 Top Brand</h4>
+                    <p class="benefit-description">
+                        We are one of the best brands in the<br>
+                        Food and Beverage sector<br>
+                        in Indonesia.
+                    </p>
+                    <div class="benefit-learn">
+                        <a class="benefit-link" href="#">Learn More</a>
                         <img
-                            class="benefit-img"
-                            src="./images/icon_cup.svg"
-                            alt="Benefit"
-                        />
-                        <h4 class="service-name">100 Top Brand</h4>
-                        <p class="service-description">
-                            We are one of the best brands in the
-                            Food and Beverage sector
-                            in Indonesia.
-                        </p>
-                        <div class="benefit-learn">
-                            <a class="benefit-link" href="#">Learn More</a>
-                            <img
-                                class="benefit-arrow"
-                                src="./images/arrow.svg"
-                                alt="Arrow"
-                        </div>
-                    </article>
-                </div>
-            </section>
+                            class="benefit-arrow"
+                            src="./images/arrow.svg"
+                            alt="Arrow"/>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-            <section class="comments">
-                <h2 class="section-header">What Are People Saying <span class="orange-part">About Us</span></h2>
-                <p class="comments-description">We are very happy if you are satisfied with our service and products, let's read pure reviews from customers who bought our products.</p>
+        <section class="comments">
+            <div class="comments-left-header">
+                <h2 class="comments-header">What Are People Saying <span class="orange-part">About Us</span></h2>
+                <p class="comments-description">We are very happy if you are satisfied with our<br>service and products, let's read pure reviews from<br>customers who bought our products.</p>
                 <div class="comments-counter">
                     <span class="comments-counter-capital">02</span>
                     <span class="comments-counter-lower">/05</span>
@@ -172,170 +176,170 @@
                     <button class="comments-btn"><img src="./images/arrow_white_left.svg"></button>
                     <button class="comments-btn"><img src="./images/arrow_white_right.svg"></button>
                 </div>
-                <aside class="comments-cards">
-                    <article class="comment">
-                        <img
-                            class="comment-customer"
-                            src="./images/person1.png"
-                            alt="Customer"
-                        />
-                        <h4 class="comment-name">Hryniv Rostyslav</h4>
-                        <span class="comment-year">60 Years</span>
-                        <p class="comment-text">This pizza is like hypothesis testing! You can immerse yourself into it! Love this pizza even more than Normal distribution :)
-
-                        Oles thanks for the job as a dekan!</p>
-                    </article>
-                    <article class="comment">
-                        <img
-                            class="comment-customer"
-                            src="./images/person2.png"
-                            alt="Customer"
-                        />
-                        <h4 class="comment-name">Tetiana Zakharchenko</h4>
-                        <span class="comment-year">35 Years</span>
-                        <p class="comment-text">The pizza is tasty!!! Even OP doesn’t look like this pizza in Oles factory pizza, it’s unreal, it sounds so brilliant and tastes in the same way. Only recommendation!!!!!</p>
-                    </article>
-                    <article class="comment">
-                        <img
-                            class="comment-customer"
-                            src="./images/person3.png"
-                            alt="Customer"
-                        />
-                        <h4 class="comment-name">Nadia Liaskovska</h4>
-                        <span class="comment-year">46 Years</span>
-                        <p class="comment-text">This pizza sounds as a reduced row echelon form, sounds strange, but when you try it, it is as Natalia once said  PUT YOURSELF ON MYSELF AND FEEL THAT taste!!!</p>
-                    </article>
-                </aside>
-            </section>
-
-            <section class="menu">
-                <h3 class="section-subheader">Menu by Oles</h3>
-                <h2 class="section-header">ENJOY THE BEST MENU AND GET <span class="orange-part">DISCOUNTS</span> AVAILABLE</h2>
-                <div class="menu-container">
-                    <article class="menu-item">
-                        <img
-                            class="menu-img"
-                            src="./images/menu1.png"
-                            alt="Pizza"
-                        />
-                        <span class="menu-name">Pizza Proxy Factory</span>
-                        <h4 class="menu-price">$2.99</h4>
-                    </article>
-                    <article class="menu-item">
-                        <img
-                            class="menu-img"
-                            src="./images/menu2.png"
-                            alt="Pizza"
-                        />
-                        <span class="menu-name">Pizza Normal Distribution</span>
-                        <h4 class="menu-price">$3.99</h4>
-                    </article>
-                    <article class="menu-item">
-                        <img
-                            class="menu-img"
-                            src="./images/menu3.png"
-                            alt="Pizza"
-                        />
-                        <span class="menu-name">Pizza Tipa Korotshe</span>
-                        <h4 class="menu-price">$3.99</h4>
-                    </article>
-            </section>
-
-            <section class="subscribe">
-                <img
-                    class="subscribe-background-img"
-                    src="./images/lines.svg"
-                    alt="Background"
-                />
-                <h3 class="section-subheader">Our Subscribe</h3>
-                <h2 class="section-header">Subscribe To Get The Latest Promo from Oles Pizza</h2>
-                <p class="subscribe-description">We recommended you to subscribe to our promo program, drop your email below to get daily update about us.</p>
-                <form class="subscribe-form">
-                    <input
-                        class="subscribe-input"
-                        type="email"
-                        placeholder="Enter your email address"
+            </div>
+            <aside class="comments-cards">
+                <article class="comment">
+                    <img
+                        class="comment-customer"
+                        src="./images/person1.png"
+                        alt="Customer"
                     />
-                    <button class="subscribe-btn" type="submit">Subscribe</button>
-                </form>
-            </section>
+                    <h4 class="comment-name">Hryniv Rostyslav</h4>
+                    <span class="comment-year">60 Years</span>
+                    <p class="comment-text">This pizza is like hypothesis testing! You can immerse yourself into it! Love this pizza even more than Normal distribution :)
 
-            <footer class="footer">
-                <div class="footer-logo">
-                    <h4><span class="orange-part">Oles</span> Pizza</h4>
-                    <p class="footer-text">Oles Pizza is the pioneer of healthy tasty pizza with high nutrition.</p>
-                    <span class="footer-undertext">©Copyright Oles UCU Pizza</span>
-                </div>
+                    Oles thanks for the job as a dekan!</p>
+                </article>
+                <article class="comment">
+                    <img
+                        class="comment-customer"
+                        src="./images/person2.png"
+                        alt="Customer"
+                    />
+                    <h4 class="comment-name">Tetiana Zakharchenko</h4>
+                    <span class="comment-year">35 Years</span>
+                    <p class="comment-text">The pizza is tasty!!! Even OP doesn’t look like this pizza in Oles factory pizza, it’s unreal, it sounds so brilliant and tastes in the same way. Only recommendation!!!!!</p>
+                </article>
+                <article class="comment">
+                    <img
+                        class="comment-customer"
+                        src="./images/person3.png"
+                        alt="Customer"
+                    />
+                    <h4 class="comment-name">Nadia Liaskovska</h4>
+                    <span class="comment-year">46 Years</span>
+                    <p class="comment-text">This pizza sounds as a reduced row echelon form, sounds strange, but when you try it, it is as Natalia once said  PUT YOURSELF ON MYSELF AND FEEL THAT taste!!!</p>
+                </article>
+            </aside>
+        </section>
 
-                <nav class="footer-nav">
-                    <h4>Feature</h4>
-                    <a class="footer-link" href="#">Menu</a>
-                    <a class="footer-link" href="#">Promo</a>
-                    <a class="footer-link" href="#">Contact</a>
-                    <a class="footer-link" href="#">About us</a>
-                </nav>
+        <section class="menu">
+            <h3 class="section-subheader">Menu by Oles</h3>
+            <h2 class="section-header">ENJOY THE BEST MENU AND GET <span class="orange-part">DISCOUNTS</span> AVAILABLE</h2>
+            <div class="menu-container">
+                <article class="menu-item">
+                    <img
+                        class="menu-img"
+                        src="./images/menu1.png"
+                        alt="Pizza"
+                    />
+                    <span class="menu-name">Pizza Proxy Factory</span>
+                    <h4 class="menu-price">$2.99</h4>
+                </article>
+                <article class="menu-item">
+                    <img
+                        class="menu-img"
+                        src="./images/menu2.png"
+                        alt="Pizza"
+                    />
+                    <span class="menu-name">Pizza Normal Distribution</span>
+                    <h4 class="menu-price">$3.99</h4>
+                </article>
+                <article class="menu-item">
+                    <img
+                        class="menu-img"
+                        src="./images/menu3.png"
+                        alt="Pizza"
+                    />
+                    <span class="menu-name">Pizza Tipa Korotshe</span>
+                    <h4 class="menu-price">$3.99</h4>
+                </article>
+        </section>
 
-                <div class="footer-touch">
-                    <h4>Get in touch</h4>
-                    <div class="footer-touch-line">
-                        <a class="footer-touch-link" href="#">
-                            <img
-                                class="footer-touch-img"
-                                src="./images/location.svg"
-                                alt="Location"
-                            />
-                        </a>
-                        <span class="footer-touch-text">Kozelnytska, 2a</span>
-                    </div>
+        <section class="subscribe">
+            <img
+                class="subscribe-background-img"
+                src="./images/lines.svg"
+                alt="Background"
+            />
+            <h3 class="section-subheader">Our Subscribe</h3>
+            <h2 class="section-header">Subscribe To Get The Latest Promo from Oles Pizza</h2>
+            <p class="subscribe-description">We recommended you to subscribe to our promo program, drop your email below to get daily update about us.</p>
+            <form class="subscribe-form">
+                <input
+                    class="subscribe-input"
+                    type="email"
+                    placeholder="Enter your email address"
+                />
+                <button class="subscribe-btn" type="submit">Subscribe</button>
+            </form>
+        </section>
 
-                    <div class="footer-touch-line">
-                        <a class="footer-touch-link" href="#">
-                            <img
-                                class="footer-touch-img"
-                                src="./images/email.svg"
-                                alt="Email"
-                            />
-                        </a>
-                        <span class="footer-touch-text">dobosevych@ucu.edu.ua</span>
-                    </div>
+        <footer class="footer">
+            <div class="footer-logo">
+                <h4><span class="orange-part">Oles</span> Pizza</h4>
+                <p class="footer-text">Oles Pizza is the pioneer of healthy tasty pizza with high nutrition.</p>
+                <span class="footer-undertext">©Copyright Oles UCU Pizza</span>
+            </div>
 
-                    <div class="footer-touch-line">
-                        <a class="footer-touch-link" href="#">
-                            <img
-                                class="footer-touch-img"
-                                src="./images/phone.svg"
-                                alt="Phone"
-                            />
-                        </a>
-                        <span class="footer-touch-text">+380 (50) 819 78 55</span>
-                    </div>
-                </div>
+            <nav class="footer-nav">
+                <h4>Feature</h4>
+                <a class="footer-link" href="#">Menu</a>
+                <a class="footer-link" href="#">Promo</a>
+                <a class="footer-link" href="#">Contact</a>
+                <a class="footer-link" href="#">About us</a>
+            </nav>
 
-                <div class="footer-social">
-                    <a class="footer-social-link" href="#">
+            <div class="footer-touch">
+                <h4>Get in touch</h4>
+                <div class="footer-touch-line">
+                    <a class="footer-touch-link" href="#">
                         <img
-                            class="footer-social-img"
-                            src="./images/twitter.svg"
-                            alt="Twitter"
+                            class="footer-touch-img"
+                            src="./images/location.svg"
+                            alt="Location"
                         />
                     </a>
-                    <a class="footer-social-link" href="#">
-                        <img
-                            class="footer-social-img"
-                            src="./images/linkedin.svg"
-                            alt="LinkedIn"
-                        />
-                    </a>
-                    <a class="footer-social-link" href="#">
-                        <img
-                            class="footer-social-img"
-                            src="./images/instagram.svg"
-                            alt="Instagram"
-                        />
-                    </a>
-                    <span class="footer-text">Follow our social media.</span>
+                    <span class="footer-touch-text">Kozelnytska, 2a</span>
                 </div>
-            </footer>
-        </main>
+
+                <div class="footer-touch-line">
+                    <a class="footer-touch-link" href="#">
+                        <img
+                            class="footer-touch-img"
+                            src="./images/email.svg"
+                            alt="Email"
+                        />
+                    </a>
+                    <span class="footer-touch-text">dobosevych@ucu.edu.ua</span>
+                </div>
+
+                <div class="footer-touch-line">
+                    <a class="footer-touch-link" href="#">
+                        <img
+                            class="footer-touch-img"
+                            src="./images/phone.svg"
+                            alt="Phone"
+                        />
+                    </a>
+                    <span class="footer-touch-text">+380 (50) 819 78 55</span>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <a class="footer-social-link" href="#">
+                    <img
+                        class="footer-social-img"
+                        src="./images/twitter.svg"
+                        alt="Twitter"
+                    />
+                </a>
+                <a class="footer-social-link" href="#">
+                    <img
+                        class="footer-social-img"
+                        src="./images/linkedin.svg"
+                        alt="LinkedIn"
+                    />
+                </a>
+                <a class="footer-social-link" href="#">
+                    <img
+                        class="footer-social-img"
+                        src="./images/instagram.svg"
+                        alt="Instagram"
+                    />
+                </a>
+                <span class="footer-text">Follow our social media.</span>
+            </div>
+        </footer>
     </body>
 </html>
