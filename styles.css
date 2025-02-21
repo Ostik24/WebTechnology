@@ -321,6 +321,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 4.5%;
+    gap: 35px;
 }
 
 .benefit {
@@ -328,7 +329,10 @@ body {
     box-shadow: 0px 0px 8px 2px rgba(251, 147, 51, 0.5);
     border-radius: 50px;
     padding: 2.5% 2%;
-    transition: box-shadow 0.4s ease-in-out;
+    transform: scale(1.05);
+    transition:
+        transform 0.4s ease-in-out,
+        box-shadow 0.4s ease-in-out;
 }
 
 .benefit:has(.benefit-learn:hover) {
@@ -496,4 +500,145 @@ body {
     color: #575757;
     font-size: 16px;
     font-weight: 400;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding: 7% 5%;
+    align-items: center;
+}
+
+.menu-text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+
+.menu-subheader {
+    color: #fb9333;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.menu-header {
+    color: #585858;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.menu-item {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: scale(1.03);
+}
+
+.menu-img {
+    width: 100%;
+    border-radius: 40px;
+}
+
+.menu-underimage {
+    position: absolute;
+    display: flex;
+    bottom: -30px;
+    left: 25px;
+    flex-direction: column;
+    color: #ffffff;
+    gap: 5px;
+}
+
+.menu-name {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: -50px;
+}
+
+.menu-price {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 241, 222, 1);
+    border: none;
+    border-radius: 50px;
+    position: relative;
+    margin: 5%;
+}
+
+.section-subheader {
+    color: #fb9333;
+    font-size: 20px;
+    font-weight: 400;
+    align-self: center;
+}
+
+.section-header {
+    color: #585858;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.subscribe-description {
+    color: #575757;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -1%;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 30% 10% 30%;
+    width: 40%;
+}
+
+.subscribe-input {
+    flex: 1;
+    border: none;
+    font-size: 18px;
+    color: #575757;
+    background-color: #ffffff;
+    padding: 6% 8.5%;
+    margin-left: -25%;
+    margin-right: -25%;
+    border-radius: 100px;
+    position: relative;
+}
+
+.subscribe-btn {
+    background-color: #fb9333;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 100px;
+    margin: 0.4% 0 0 35%;
+    padding: 2% 3.5%;
+    position: absolute;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.subscribe-btn:hover {
+    background-color: #ffa94d;
 }
