@@ -1,5 +1,5 @@
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -19,13 +19,13 @@ body {
 
 .logo {
     font-size: 24px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
     margin: 0.7% 0;
 }
 
 .orange-part {
-    color: #FB9333;
+    color: #fb9333;
 }
 
 .header-nav {
@@ -43,11 +43,11 @@ body {
 }
 
 .header-link:hover {
-    color: #FB9333;
+    color: #fb9333;
 }
 
 .sign-btn {
-    background-color: #FB9333;
+    background-color: #fb9333;
     color: white;
     font-size: 16px;
     font-weight: 500;
@@ -58,7 +58,7 @@ body {
 }
 
 .sign-btn:hover {
-    background-color: #FFA94D;
+    background-color: #ffa94d;
 }
 
 .main {
@@ -78,8 +78,8 @@ body {
 }
 
 .banner-subheader span {
-    background-color: #FFF0DC;
-    color: #FB9333;
+    background-color: #fff0dc;
+    color: #fb9333;
     font-weight: 600;
     border: none;
     border-radius: 100px;
@@ -101,7 +101,7 @@ body {
 
 .banner-more-btn {
     text-decoration: none;
-    background-color: #FB9333;
+    background-color: #fb9333;
     color: white;
     font-size: 18px;
     font-weight: 500;
@@ -113,7 +113,7 @@ body {
 }
 
 .banner-more-btn:hover {
-    background-color: #FFA94D;
+    background-color: #ffa94d;
 }
 
 /* Features 5000+... */
@@ -146,7 +146,7 @@ body {
     align-items: center;
     display: flex;
     position: absolute;
-    bottom: 20%;
+    top: 570px;
     width: 35%;
 }
 
@@ -185,13 +185,13 @@ body {
 }
 
 .calories {
-    background-color: rgba(255, 255, 255, 0.90);
+    background-color: rgba(255, 255, 255, 0.9);
     border: none;
     border-radius: 28px;
     display: flex;
     position: absolute;
-    bottom: 9%;
-    left: 60%;
+    top: 540px;
+    left: 65%;
     width: 22%;
     flex-direction: column;
 }
@@ -213,7 +213,7 @@ body {
 }
 
 .calories-text-bold {
-    color: #2B2B2B;
+    color: #2b2b2b;
     font-weight: bold;
     font-size: 24px;
 }
@@ -228,14 +228,17 @@ body {
 }
 
 .calories-progress-bar {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     border-radius: 100px;
     height: 9vh;
     width: 8%;
 }
 
-.calories-progress-bar-in  {
+.calories-progress-bar-in {
     background: linear-gradient(to bottom, #ffe1c2 0%, #fd9533 95%);
     border: none;
     border-radius: 100px;
@@ -274,13 +277,21 @@ body {
     height: 72%;
 }
 
+.main-image-person {
+    width: 100%;
+}
+
 .main-image-person:active {
     animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Benefits */
@@ -314,9 +325,10 @@ body {
 
 .benefit {
     background-color: #ffffff;
-    border: none;
+    box-shadow: 0px 0px 8px 2px rgba(251, 147, 51, 0.5);
     border-radius: 50px;
     padding: 2.5% 2%;
+    transition: box-shadow 0.4s ease-in-out;
 }
 
 .benefit:has(.benefit-learn:hover) {
@@ -332,11 +344,13 @@ body {
     border-radius: 100px;
     padding: 4.5% 15%;
     width: 45%;
-    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+    transition:
+        background-color 0.4s ease-in-out,
+        color 0.4s ease-in-out;
 }
 
 .benefit-learn:hover {
-    background-color: #FB9333;
+    background-color: #fb9333;
     color: white;
 }
 
@@ -367,7 +381,7 @@ body {
 .benefit-name {
     font-size: 24px;
     font-weight: 500;
-    color: #2B2B2B;
+    color: #2b2b2b;
     margin-bottom: 5%;
 }
 
@@ -382,7 +396,7 @@ body {
 
 .comments {
     display: flex;
-    background: linear-gradient(to bottom, #FFF6EA 0%, #ffe8c787 100%);
+    background: linear-gradient(to bottom, #fff6ea 0%, #ffe8c787 100%);
 }
 
 .comments-header {
@@ -405,7 +419,7 @@ body {
 }
 
 .comments-counter-lower {
-    color: #CCCCCC;
+    color: #cccccc;
     font-size: 16px;
     font-weight: 600;
     margin-top: 6.7%;
@@ -421,19 +435,19 @@ body {
     margin-top: 8%;
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 29%;
 }
 
 .comments-btn {
-    background-color: #FFC87A;
+    background-color: #ffc87a;
     border: none;
     border-radius: 10px;
-    padding: 20%;
+    padding: 14% 16% 10.5% 16%;
     transition: background-color 0.4s ease-in-out;
 }
 
 .comments-btn:hover {
-    background-color: #FB9333;
+    background-color: #fb9333;
 }
 
 .comments-left-header {
@@ -442,3 +456,44 @@ body {
     margin: 6% 0 6% 8%;
 }
 
+.comments-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 70%;
+    overflow: hidden;
+}
+
+.comment {
+    background-color: #fffdf9;
+    border-radius: 8px;
+    height: 55%;
+    margin-top: 20%;
+    padding: 4%;
+    width: 20%;
+    position: relative;
+}
+
+.comment-customer {
+    position: absolute;
+    margin-left: 10%;
+}
+
+.comment-name {
+    color: #2b2b2b;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.comment-year {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.comment-text {
+    color: #575757;
+    font-size: 16px;
+    font-weight: 400;
+}
