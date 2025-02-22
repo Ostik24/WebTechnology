@@ -399,6 +399,7 @@ body {
 
 .comments {
     display: flex;
+    padding-bottom: 5%;
     background: linear-gradient(to bottom, #fff6ea 0%, #ffe8c787 100%);
 }
 
@@ -464,6 +465,7 @@ body {
     justify-content: space-between;
     flex-direction: row;
     width: 70%;
+    margin-left: 5%;
     overflow: hidden;
 }
 
