@@ -667,7 +667,7 @@ body {
     color: #585858;
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 0;
+    margin-bottom: 17.5%;
     margin-top: 7.5%;
 }
 
@@ -730,8 +730,36 @@ body {
     color: #575757;
     font-size: 16px;
     font-weight: 400;
+    margin-left: 5%;
+}
+
+#foot-email {
+    margin-left: 2%;
+}
+
+#foot-phone {
+    margin-left: 3%;
 }
 
 .footer-touch-link {
     text-decoration: none;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 1.5%;
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.footer-text {
+    color: #575757;
+    font-size: 16px;
+    font-weight: 400;
 }
